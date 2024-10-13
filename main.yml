@@ -40,4 +40,3 @@
         name: remove_default_user
       vars:
         ansible_become_password: "{{ new_user_password }}"
-
