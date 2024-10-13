@@ -7,8 +7,8 @@ roles:
     src: https://github.com/ChrisZ-IT/ssh_hardening.git
     version: v1.0.0
 
-  - name: lan_interfaces
-    src: https://github.com/ChrisZ-IT/lan_interfaces.git
+  - name: wan_interfaces
+    src: https://github.com/ChrisZ-IT/wan_interfaces.git
     version: v1.0.0
 
   - name: remove_default_user
