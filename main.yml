@@ -22,10 +22,11 @@
     prompt: Enter the passphrase of the lan wifi (Passphrase you will use to connect TO THE raspberry pi)
     private: true
     confirm: true
+  become: true
   tasks:
-    - name: Ensure intial setup is run
+    - name: Ensure initial setup is run
       ansible.builtin.include_role:
-        name: inital_setup
+        name: initial_setup
 
     - name: Ensure ssh hardening is run
       ansible.builtin.include_role:
@@ -38,5 +39,3 @@
     - name: Ensure default pi user is removed
       ansible.builtin.include_role:
         name: remove_default_user
-      vars:
-        ansible_become_password: "{{ new_user_password }}"
